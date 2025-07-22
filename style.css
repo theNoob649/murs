@@ -1,0 +1,341 @@
+/* M.U.R.S. Homepage Styles */
+
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #1b1b1b;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #292929;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #50f763;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #4fc3f7;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  color: #bbbbbb;
+  margin: 10px 0 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #4fc3f7;
+  width: 80%;
+  margin: 20px auto;
+}
+
+h3,
+h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #dddddd;
+  margin-bottom: 20px;
+}
+
+.update-links {
+  max-height: 45vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px;
+  box-sizing: content-box;
+
+  display: flex;
+  /* enable flexbox */
+  flex-wrap: wrap;
+  /* wrap buttons to next line if needed */
+  justify-content: center;
+  /* center horizontally */
+  gap: 10px;
+  /* spacing between buttons */
+}
+
+
+/* Thin scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.update-links::-webkit-scrollbar {
+  width: 8px;
+}
+
+.update-links::-webkit-scrollbar-track {
+  background: transparent;
+  /* or a light shade */
+}
+
+.update-links::-webkit-scrollbar-thumb {
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  /* space around thumb */
+}
+
+/* Firefox scrollbar styling */
+@-moz-document url-prefix() {
+  .update-links {
+    scrollbar-width: thin;
+    scrollbar-color: #1b1b1b transparent;
+  }
+}
+
+
+.update-links a {
+  display: inline-block;
+  /* so padding & rounded corners work nicely */
+  padding: 10px 15px;
+  margin: 5px 8px;
+  background-color: #2a9df4;
+  /* example blue, change as you want */
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  /* rounded edges */
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.update-links a:hover {
+  background-color: #1c7cd6;
+  /* darker blue on hover */
+}
+
+
+/* Make the whole page a flex container with column layout */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let main content grow to fill available space */
+/* Let main content grow to fill available space */
+.content {
+  flex: 1 0 auto;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Footer sticks to the bottom */
+footer {
+  flex-shrink: 0;
+  background-color: #292929;
+  color: #888888;
+  font-size: 0.9em;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 2px solid #50f763;
+  user-select: none;
+}
+
+
+p {
+  font-weight: 400;
+  color: #bbbbbb;
+  margin: 10px 0 0;
+}
+
+.game-links a {
+  display: inline-block;
+  /* so padding & rounded corners work nicely */
+  padding: 10px 15px;
+  margin: 5px 8px;
+  background-color: #2a9df4;
+  /* example blue, change as you want */
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  /* rounded edges */
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.game-links a:hover {
+  background-color: #1c7cd6;
+  /* darker blue on hover */
+}
+
+.game-links {
+  max-height: 45vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px;
+  box-sizing: content-box;
+
+  display: flex;
+  /* enable flexbox */
+  flex-wrap: wrap;
+  /* wrap buttons to next line if needed */
+  justify-content: center;
+  /* center horizontally */
+  gap: 10px;
+  /* spacing between buttons */
+}
+
+
+/* Thin scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.game-links::-webkit-scrollbar {
+  width: 8px;
+}
+
+.game-links::-webkit-scrollbar-track {
+  background: transparent;
+  /* or a light shade */
+}
+
+.game-links::-webkit-scrollbar-thumb {
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  /* space around thumb */
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start; /* aligns links to the left */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #292929;
+  overflow-x: auto; /* allows horizontal scroll if too many links */
+  white-space: nowrap; /* prevents links from wrapping to the next line */
+}
+
+.nav a {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 12px;
+  border-radius: 6px; /* gives rounded edges */
+  transition: background-color 0.3s ease;
+  color: #50f763;
+}
+
+.nav a:hover {
+  background-color: #bde0db;
+  color: #0033cc;
+}
+
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #292929;
+  border: 2px solid #4fc3f7;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.about h2 {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.5em;
+  color: #4fc3f7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #bbbbbb;
+  font-size: 1.05em;
+  margin-bottom: 15px;
+}
+
+.about hr {
+  border: none;
+  border-top: 2px solid #50f763;
+  margin: 20px 0;
+}
+
+
+.content-wrapper {
+  flex: 1; /* pushes footer to the bottom */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional: centers content vertically */
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+/* Contact form styling to match M.U.R.S. theme */
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto 4rem;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #222;       /* dark background consistent with site */
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  border: 2px solid #50f763;   /* that iconic bright green */
+  box-shadow: 0 0 10px #50f76344;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #50f763;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #4fc3f7; /* subtle blue border */
+  background-color: #111;
+  color: #eee;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #50f763;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #50f763;
+  color: #111;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #3cb140;
+}

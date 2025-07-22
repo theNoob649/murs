@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Contact - M.U.R.S.</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>M.U.R.S.</h1>
+    <h2>Minecraft Update Report Site</h2>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">Read More</a>
+      <a href="play.html">Play Classic</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <h2>Contact M.U.R.S.</h2>
+    <p>Got questions, ideas, or feedback? Hit us up!</p>
+
+    <form class="contact-form" action="mailto:contact@mcmurs.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 M.U.R.S. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
