@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>M.U.R.S. - Minecraft 1.15</title>
+  <meta charset="UTF-8">
+  <title>M.U.R.S. - Buzzy Bees</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,14 +15,43 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.15: The Buzzy Bees Update</h2>
-    <h3>Release Date: December 10, 2019</h3>
+    <h2>Buzzy Bees</h2>
+    <h3>Minecraft 1.15</h3>
     <hr>
-    <p>This update brought bees buzzing into Minecraft with new bee mobs, beehives, and honey blocks, adding fresh
-      mechanics around pollination and farming.</p>
-    <p><strong>Tiny addition:</strong></p>
-    <p>Honey blocks quietly became a game-changer for builders and redstone engineers thanks to their sticky and sliding
-      properties.</p>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> December 10, 2019</li>
+      <li><strong>Development:</strong> 15 snapshots, 7 pre-releases</li>
+    </ul>
+    <p>1.15 is the smallest major update Minecraft has ever shipped, and that was the point. 1.14 had landed eight months earlier with a rebuilt village system and visible performance problems, and the technical debt from 1.13's rewrite was still unpaid. Rather than pile another headline feature on top, Mojang spent a release cleaning up &mdash; and attached one new mob so the version had something to be called.</p>
+
+    <h4>A Deliberate Pause</h4>
+    <p>The stated goal for 1.15 was fixing bugs and improving performance, and the numbers back that up: over 300 reported issues were closed across the release. The work was unglamorous &mdash; chunk loading, lighting, entity ticking, memory behavior &mdash; and largely invisible unless you had been running a server through 1.14, in which case it was extremely visible.</p>
+    <p>1.15 also pulled a batch of features that had existed only in Bedrock Edition back into Java, continuing the slow convergence of the two versions that had been underway since Bedrock's launch.</p>
+
+    <h4>Bees</h4>
+    <p>The one new mob is a good one. Bees are neutral, live in colonies, and behave like a small simulation rather than a decoration.</p>
+    <ul>
+      <li><strong>Bee nests</strong> generate naturally on oak and birch trees in flower forests, plains, and sunflower plains. <strong>Beehives</strong> are the craftable equivalent, made from planks and honeycomb.</li>
+      <li>Bees leave the hive during the day, pollinate flowers, and return. A pollinated bee passing over crops speeds their growth, making bees a genuine agricultural tool rather than an ornament.</li>
+      <li>Each trip adds honey to the hive, which fills through five visible stages.</li>
+      <li>They are neutral until provoked. Attack one and the whole nest comes out; like real bees, stinging kills them, which is a small and grim piece of accuracy.</li>
+      <li>Harvesting with shears yields <strong>honeycomb</strong>; with a bottle, <strong>honey bottles</strong>. Either action angers the colony unless a lit campfire sits beneath the hive to calm them.</li>
+    </ul>
+    <p>Honey bottles restore hunger and, unusually, clear the Poison effect &mdash; the only food that does. Honeycomb crafts into honeycomb blocks, and later became the material for waxing copper in 1.17.</p>
+
+    <h4>The Honey Block</h4>
+    <p>The quiet standout is the <strong>honey block</strong>. It sticks to adjacent blocks when pushed by a piston, like slime, but with one critical difference: honey and slime do not stick to each other. That single asymmetry let redstone engineers build piston contraptions that could selectively grab and release, and flying machines that could stop, reverse, and be steered rather than just travel in one direction until they hit something.</p>
+    <ul>
+      <li>Players slide slowly down the side of a honey block instead of falling.</li>
+      <li>Walking across the top slows movement and prevents jumping.</li>
+      <li>Landing on one cancels fall damage entirely.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>Worth noting:</strong> a release built around not adding much still produced the most consequential redstone block since the slime block. Small updates are not the same as unimportant ones.</p>
+    </div>
+
+    <p>Buzzy Bees is remembered as the update where nothing happened. It is more accurate to say it is the update where the game caught its breath before the Nether.</p>
   </section>
 
   <div class="back-button-container">
@@ -30,10 +59,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

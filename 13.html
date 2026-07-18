@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>M.U.R.S. - Minecraft 1.13</title>
+  <title>M.U.R.S. - Update Aquatic</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,19 +15,49 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.13: Update Aquatic</h2>
-    <h3>Release Date: July 18, 2018</h3>
+    <h2>Update Aquatic</h2>
+    <h3>Minecraft 1.13</h3>
     <hr>
-    <p>The Update Aquatic transformed Minecraft’s oceans into vibrant underwater worlds full of life and adventure.</p>
-    <p>Major additions included:</p>
-    <ul>
-      <li><strong>Drowned:</strong> A new underwater zombie variant.</li>
-      <li><strong>Turtles:</strong> Passive mobs that lay eggs on beaches.</li>
-      <li><strong>Dolphins:</strong> Helpful mobs that guide players to underwater treasures.</li>
-      <li><strong>Phantoms:</strong> Flying hostile mobs that attack players who haven’t slept.</li>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> July 18, 2018</li>
+      <li><strong>Development:</strong> 42 snapshots, 10 pre-releases</li>
     </ul>
-    <p>Players could explore shipwrecks, ocean ruins, and coral reefs, while using new items like the Trident, Heart of the Sea, and Conduits for underwater exploration and combat.</p>
-    <p>Swimming mechanics were also overhauled, making underwater movement smoother and faster.</p>
+    <p>Forty-two snapshots. No other update in Minecraft's history came close, and the reason isn't the fish. 1.13 was two updates wearing one coat: a large ocean overhaul on the surface, and underneath it, the single most invasive rewrite the game's data model has ever received.</p>
+
+    <h4>The Flattening</h4>
+    <p>Since Alpha, every block in Minecraft had a numeric ID and a four-bit "data value" bolted on to distinguish variants. Stone was 1, and 1:5 was andesite. Wool colors, log rotations, stair orientations, and half the game's state were crammed into those four bits. The cap was hard, and Mojang had run out of room.</p>
+    <p>1.13 tore it out. Numeric IDs were replaced with namespaced string identifiers &mdash; <code>minecraft:andesite</code> instead of <code>1:5</code> &mdash; and data values were replaced with named block states. Every variant became its own block. The upside is that the ceiling is gone and the internals finally make sense. The cost was paid by everyone downstream.</p>
+    <ul>
+      <li><strong>Mods broke universally.</strong> Not "some mods" &mdash; effectively every mod that referenced a block, which is every mod. The 1.12.2 modding ecosystem was so entrenched that large packs stayed there for years afterward.</li>
+      <li><strong>Command blocks broke.</strong> Command syntax was overhauled alongside the IDs, so adventure maps and minigame servers built on years of accumulated command logic needed line-by-line rewrites.</li>
+      <li><strong>Worlds needed conversion.</strong> Old saves are upgraded on load through a translation layer, which works, but the process is one-way.</li>
+    </ul>
+    <p>In exchange, 1.13 introduced <strong>data packs</strong> and <strong>tags</strong>, giving map makers a proper, version-stable way to define recipes, loot tables, advancements, and functions without touching the jar. Nearly every custom map and server feature built since sits on that foundation.</p>
+
+    <h4>The Oceans</h4>
+    <p>Before 1.13, ocean floors were flat sand you swam over to get somewhere else. After, they were a biome family with their own generation, loot, and hazards.</p>
+    <ul>
+      <li><strong>Coral reefs</strong> in warm oceans, with living coral that dies and greys out if it isn't kept in water.</li>
+      <li><strong>Kelp, sea pickles, sea grass, and blue ice</strong> &mdash; blue ice being the fastest surface in the game for boat travel.</li>
+      <li><strong>Shipwrecks, ocean ruins, and buried treasure,</strong> connected by treasure maps that made exploration a chain rather than a wander.</li>
+      <li><strong>Water became biome-tinted and far more transparent,</strong> which sounds cosmetic and completely changed how the ocean reads at depth.</li>
+    </ul>
+
+    <h4>New Mobs and Gear</h4>
+    <ul>
+      <li><strong>Drowned:</strong> underwater zombies, some carrying tridents, and the only renewable source of the nautilus shell.</li>
+      <li><strong>Dolphins:</strong> grant Dolphin's Grace when swum alongside, and lead players to nearby ruins or shipwrecks if fed raw fish.</li>
+      <li><strong>Turtles:</strong> lay eggs on the beach they hatched on; scutes from hatchlings craft the turtle shell helmet and its water-breathing bonus.</li>
+      <li><strong>Phantoms:</strong> spawn after three in-game days without sleep. The game's first mechanic that actively punishes you for ignoring a bed.</li>
+      <li><strong>Tridents</strong> with Loyalty, Riptide, Channeling, and Impaling, plus <strong>conduits</strong> built from prismarine and the Heart of the Sea to create a permanent underwater safe zone.</li>
+    </ul>
+    <p>Swimming itself was rebuilt: hold sprint underwater and the player goes horizontal and moves genuinely fast, instead of bobbing upright at walking speed.</p>
+
+    <div class="callout">
+      <p><strong>The performance cost:</strong> 1.13 shipped noticeably slower than 1.12 on the same hardware. The rewrite left real performance debt in chunk loading and lighting, and it took until 1.14 and 1.15 &mdash; with 1.15 explicitly built around the problem &mdash; before Java Edition felt right again.</p>
+    </div>
+
+    <p>1.13 is remembered as the ocean update. It was really the update where Minecraft paid off a decade of technical debt in one enormous, painful installment.</p>
   </section>
 
   <div class="back-button-container">
@@ -35,10 +65,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

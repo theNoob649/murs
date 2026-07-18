@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>M.U.R.S. - Minecraft 1.2</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
@@ -16,19 +16,44 @@
 
   <section class="article">
     <h2>Minecraft 1.2</h2>
-    <h3>Release Date: March 1, 2012</h3>
-    <hr />
-    <p>Minecraft 1.2 was a massive content update focused on expanding the world, mobs, and core gameplay features.</p>
-    <ul>
-      <li><strong>Jungle Biomes:</strong> Introduced dense jungles with tall trees, vines, and exclusive jungle wood.</li>
-      <li><strong>Ocelots:</strong> New passive mobs found in jungles, which could be tamed into cats to scare away creepers.</li>
-      <li><strong>Iron Golems:</strong> Village defenders created by players or villagers to protect against hostile mobs.</li>
-      <li><strong>New World Height Limit:</strong> Increased from 128 blocks to 256, allowing taller structures and terrain.</li>
-      <li><strong>Fire Charge:</strong> A new item acting like a single-use flint and steel.</li>
-      <li><strong>Redstone Lamps:</strong> A new light source powered by redstone signals.</li>
-      <li><strong>New Language Support:</strong> Added over 50 languages to the game, including Pirate Speak.</li>
+    <h3>Jungles, Smarter Mobs, and Twice the Sky</h3>
+    <hr>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> March 1, 2012</li>
+      <li><strong>Development:</strong> 8 snapshots, 1 pre-release</li>
     </ul>
-    <p>This update made Minecraft’s world larger and more dynamic, setting the stage for future exploration and building.</p>
+    <p>1.2 never got an official Mojang name, but it did more structural work than most named updates. It replaced the world file format, doubled the build height, rewrote how mobs think, and added the biome players had been asking for since the biome system existed.</p>
+
+    <h4>Anvil and the 256-Block Ceiling</h4>
+    <p>The headline technical change was the switch from the MCRegion save format to <strong>Anvil</strong>. Chunks were restructured into 16&times;16&times;16 sections, which meant unused vertical space cost almost nothing to store.</p>
+    <p>Two things fell out of that. Build height went from 128 blocks to 256, doubling everything above ground without touching the terrain generator. And the block ID space expanded to 4096, which mattered enormously to the modding community &mdash; the old 256-ID limit had been the hard ceiling that forced mod packs to fight each other for slots.</p>
+
+    <h4>Jungles and the Mobs That Live There</h4>
+    <ul>
+      <li><strong>Jungle biome:</strong> dense canopy, huge 2&times;2 trees, vines everywhere, and its own wood type. Getting through one on foot was genuinely difficult, which was the point.</li>
+      <li><strong>Ocelots:</strong> skittish jungle cats tamed with raw fish. Tame one and it becomes a cat &mdash; and cats scare creepers away, making them the only mob in the game with a defensive purpose.</li>
+      <li><strong>Iron golems:</strong> village guardians that spawn naturally in populated villages, and can be built by the player from four iron blocks and a pumpkin.</li>
+      <li><strong>Desert wells</strong> as small generated landmarks, and mineshafts gained wooden support bridges under sections that generated over open air.</li>
+    </ul>
+
+    <h4>The Mob AI Rewrite</h4>
+    <p>Less visible but more consequential: 1.2 replaced the old hardcoded mob behavior with a task-based AI system, and mobs immediately started acting less like scripted hazards.</p>
+    <ul>
+      <li><strong>Creepers stopped strafing.</strong> They now walk directly at you and stop before detonating &mdash; more predictable, and far more tense.</li>
+      <li><strong>Zombies break down doors</strong> on Hard difficulty, and actively hunt villagers rather than ignoring them.</li>
+      <li><strong>Villagers breed</strong> based on available housing, so villages could finally grow instead of only shrinking.</li>
+      <li>Mobs generally path around obstacles instead of walking into walls.</li>
+    </ul>
+    <p>Together these changes turned a village raid at night from ambient noise into an actual siege you had to defend against &mdash; and gave iron golems something to do.</p>
+
+    <h4>Blocks and Odds and Ends</h4>
+    <p>Redstone lamps arrived as the first proper switchable light source. Fire charges gave dispensers a ranged ignition option. Chiseled stone brick and jungle planks widened the palette. Cobwebs were changed to absorb all fall damage, which quietly created an entire category of elevator and safety-landing design.</p>
+
+    <div class="callout">
+      <p><strong>Why the format change mattered:</strong> the jump from 256 to 4096 block IDs is the single reason large modpacks became feasible. Anvil is still the basis of Minecraft's save format today.</p>
+    </div>
+
+    <p>An unnamed update that quietly rebuilt three of the game's foundations at once.</p>
   </section>
 
   <div class="back-button-container">
@@ -36,11 +61,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
-

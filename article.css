@@ -65,6 +65,13 @@ section.article h3 {
   font-weight: 400;
 }
 
+/* In-article section headings */
+section.article h4 {
+  color: #50f763;
+  font-size: 1.15em;
+  margin: 28px 0 10px;
+}
+
 hr {
   border: none;
   border-top: 2px solid #4fc3f7;

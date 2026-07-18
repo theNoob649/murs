@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>M.U.R.S. - Minecraft 1.14</title>
+  <meta charset="UTF-8">
+  <title>M.U.R.S. - Village &amp; Pillage</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,17 +15,50 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.14: Village & Pillage</h2>
-    <h3>Release Date: April 23, 2019</h3>
-    <hr />
-    <p>The Village & Pillage update completely revamped villages, adding new designs for different biomes and more dynamic villager behavior.</p>
-    <p>New mobs introduced:</p>
-    <ul>
-      <li><strong>Pillagers:</strong> Hostile mobs that attack villages with crossbows.</li>
-      <li><strong>Ravagers:</strong> Large, tough mobs that serve as powerful attackers during raids.</li>
-      <li><strong>Wandering Traders:</strong> Traders that roam and offer rare items.</li>
+    <h2>Village &amp; Pillage</h2>
+    <h3>Minecraft 1.14</h3>
+    <hr>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> April 23, 2019</li>
+      <li><strong>Development:</strong> 32 snapshots, 5 pre-releases</li>
     </ul>
-    <p>Other highlights included new blocks like the Bell, Loom, and Campfire, as well as the introduction of raids—a new village defense challenge.</p>
+    <p>Villages had barely changed since 2011. They were a handful of identical cobblestone-and-oak boxes dropped into any biome, populated by identical brown-robed villagers trading from a fixed table. 1.14 rebuilt all of it &mdash; the buildings, the inhabitants, the economy, and the threat model.</p>
+
+    <h4>Villages That Belong Where They Are</h4>
+    <p>Village generation was rewritten around biome-specific building sets. Desert villages are sandstone with flat roofs, taiga villages are spruce with steep pitches, savanna villages use acacia, and snowy villages are packed ice and spruce. Layouts are assembled from structure pieces rather than stamped from a template, so no two villages read the same.</p>
+    <p>The old <em>door count</em> population system was scrapped. Villages are now defined by <strong>beds</strong> and <strong>job site blocks</strong>: beds determine how many villagers a village supports, job blocks determine what those villagers do.</p>
+
+    <h4>Professions, Trading, and Gossip</h4>
+    <p>An unemployed villager claims a nearby job block and takes that profession. Break the block before their trades lock in and they'll take a different one &mdash; the basis of every trading hall built since.</p>
+    <ul>
+      <li><strong>Job blocks:</strong> lectern (librarian), grindstone (weaponsmith), smithing table (toolsmith), blast furnace (armorer), smoker (butcher), cartography table, fletching table, loom (shepherd), barrel (fisherman), composter (farmer), brewing stand (cleric), stonecutter (mason).</li>
+      <li><strong>Trade levels:</strong> villagers advance through five tiers from novice to master, unlocking better offers and visibly upgrading the badge on their clothing.</li>
+      <li><strong>Supply and demand:</strong> trades run out of stock and restock when the villager works at their job site. Buying the same offer repeatedly drives its price up.</li>
+    </ul>
+    <p>The subtler addition is <strong>gossip</strong>. Villagers track your reputation and share it with each other. Curing a zombie villager generates major positive gossip and permanently slashes prices across that village; hitting or killing villagers spreads negative gossip and raises them. It is the first system in Minecraft where NPCs hold opinions about you and tell their neighbors.</p>
+
+    <h4>Pillagers and Raids</h4>
+    <p>Villages needed a reason to be defended, so 1.14 supplied an antagonist faction. <strong>Pillager outposts</strong> generate near villages, staffed by crossbow-wielding pillagers. Kill a <strong>pillager captain</strong> and you receive the Bad Omen effect; walk into a village still carrying it and you trigger a <strong>raid</strong>.</p>
+    <ul>
+      <li>Raids arrive in escalating waves of pillagers, vindicators, witches, and ravagers &mdash; large charging beasts that trample crops and knock players back hard.</li>
+      <li>Evokers appear in later waves, which made their drop, the <strong>totem of undying</strong>, reliably farmable for the first time.</li>
+      <li>Surviving a raid grants Hero of the Village, temporarily cutting trade prices and prompting villagers to throw profession-appropriate gifts at you.</li>
+    </ul>
+
+    <h4>Everything Else It Carried</h4>
+    <ul>
+      <li><strong>The Texture Update:</strong> 1.14 was the first release to ship the redrawn block textures, the largest single visual change in the game's history.</li>
+      <li><strong>New utility blocks:</strong> barrels, lanterns, campfires, scaffolding, bells, and the stonecutter for cheap stone shaping.</li>
+      <li><strong>Bamboo and pandas</strong> in bamboo jungles, <strong>foxes</strong> in taigas that pick up and carry items, and cats split off into a proper mob distinct from ocelots.</li>
+      <li><strong>Wandering traders</strong> and their leashed llamas, appearing anywhere as a mobile shop for otherwise awkward items.</li>
+      <li><strong>Crossbows,</strong> with Multishot, Piercing, and Quick Charge.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>A rough landing:</strong> 1.14's launch performance was poor. Villager pathfinding and the new AI systems were expensive enough to visibly hurt tick rate on servers, and four patch releases followed through 1.14.4. Mojang's response was to make the entire next update about stability.</p>
+    </div>
+
+    <p>For all the trouble, 1.14 turned villages from scenery into infrastructure. Almost every long-term survival base built since is organized around one.</p>
   </section>
 
   <div class="back-button-container">
@@ -33,10 +66,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

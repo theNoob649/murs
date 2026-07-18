@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>M.U.R.S. - Minecraft 1.5</title>
+  <meta charset="UTF-8">
+  <title>M.U.R.S. - The Redstone Update</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,19 +15,49 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.5: The Redstone Update</h2>
-    <h3>Release Date: March 13, 2013</h3>
-    <hr />
-    <p>The Redstone Update supercharged Minecraft’s engineering possibilities with new blocks and mechanics.</p>
-    <ul>
-      <li><strong>Hoppers:</strong> Automated item transfer systems for sorting and storage.</li>
-      <li><strong>Comparators:</strong> New redstone component for complex circuits and signal strength measurement.</li>
-      <li><strong>Trapped Chests:</strong> Chests that emit a redstone signal when opened.</li>
-      <li><strong>Daylight Sensors:</strong> Blocks that detect sunlight, enabling timed redstone contraptions.</li>
-      <li><strong>Dropper:</strong> Similar to dispensers but simply drops items instead of using them.</li>
-      <li><strong>Improved Performance:</strong> Lots of bug fixes and optimizations.</li>
+    <h2>The Redstone Update</h2>
+    <h3>Minecraft 1.5</h3>
+    <hr>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> March 13, 2013</li>
+      <li><strong>Development:</strong> 15 snapshots, 1 pre-release</li>
     </ul>
-    <p>This update unlocked huge creative potential for players obsessed with automation and redstone builds.</p>
+    <p>Every update before this one added things you could build <em>with</em>. 1.5 added things you could build <em>machines</em> with. It is the update that took redstone from clever wiring tricks to genuine automation, and the components it introduced are still the standard vocabulary of every technical build.</p>
+
+    <h4>The Hopper</h4>
+    <p>The hopper is the single most consequential block in the update. It pulls items from the container above it, from item entities resting on it, and pushes into whatever container it points at.</p>
+    <p>That one behavior made item transport possible without minecart trickery. Overnight, players had:</p>
+    <ul>
+      <li><strong>Automatic furnaces</strong> fed ore from above and fuel from the side, output pulled out the bottom.</li>
+      <li><strong>Item sorters</strong> built from hoppers and comparators that route each item type into its own chest.</li>
+      <li><strong>Mob and crop farm collection</strong> that no longer required standing in the drop zone.</li>
+    </ul>
+    <p>Storage systems went from a wall of chests you organized by hand to something you designed once and then fed.</p>
+
+    <h4>The Redstone Comparator</h4>
+    <p>The comparator is harder to explain and just as important. It reads two inputs and either compares them or subtracts one from the other, and critically it can measure <strong>how full a container is</strong> and output a proportional signal strength.</p>
+    <p>Signal strength stopped being a distance-decay nuisance and became data. Detecting whether a chest holds exactly one item, whether a furnace is running, whether a brewing stand has finished &mdash; all of it became possible with a single block. Comparators are why the item sorter exists at all.</p>
+
+    <h4>The Rest of the Toolkit</h4>
+    <ul>
+      <li><strong>Dropper:</strong> like a dispenser, but it just ejects the item rather than using it &mdash; the correct block for chaining item transport.</li>
+      <li><strong>Block of redstone:</strong> a permanent power source that can be moved by pistons, which is the basis of most compact clock and pulse designs.</li>
+      <li><strong>Daylight sensor:</strong> outputs a signal proportional to sunlight, giving builds a day-night trigger.</li>
+      <li><strong>Weighted pressure plates:</strong> gold and iron variants that output signal strength based on how many entities or items are on them.</li>
+      <li><strong>Trapped chest:</strong> emits a signal when opened.</li>
+      <li><strong>Activator rail</strong> and the <strong>TNT minecart</strong> and <strong>hopper minecart</strong>, extending rail systems into logic.</li>
+      <li><strong>Nether quartz ore</strong> and the quartz block family &mdash; both the crafting ingredient for comparators and daylight sensors, and the reason the Nether became a routine mining destination.</li>
+    </ul>
+
+    <h4>Outside the Wiring</h4>
+    <p>1.5 also rebuilt the texture pack format into <strong>resource packs</strong>: one file per block and item, stitched into an atlas at runtime, with proper support for HD resolutions. It killed off years of terrain.png patching workflows in one release.</p>
+    <p>Death messages were expanded to name the cause, the player involved, and the weapon used. A <strong>scoreboard</strong> system arrived for tracking objectives, which fed directly into the command-block minigame scene that 1.4 had opened up.</p>
+
+    <div class="callout">
+      <p><strong>What changed permanently:</strong> hoppers and comparators are the two blocks that make a modern automated base possible. Almost every farm design in circulation today is downstream of these two additions.</p>
+    </div>
+
+    <p>The update where Minecraft stopped being a game you play by hand.</p>
   </section>
 
   <div class="back-button-container">
@@ -35,10 +65,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

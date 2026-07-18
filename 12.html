@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>M.U.R.S. - Minecraft 1.12</title>
+  <title>M.U.R.S. - The World of Color Update</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,18 +15,44 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.12: World of Color Update</h2>
-    <h3>Release Date: June 7, 2017</h3>
+    <h2>The World of Color Update</h2>
+    <h3>Minecraft 1.12</h3>
     <hr>
-    <p>The World of Color Update revamped Minecraft’s color palette and creative potential.</p>
-    <p>Key features included:</p>
-    <ul>
-      <li><strong>Concrete & Concrete Powder:</strong> Bright, solid-colored blocks perfect for builds.</li>
-      <li><strong>Glazed Terracotta:</strong> Patterned decorative blocks with unique directional designs.</li>
-      <li><strong>Parrots:</strong> A new jungle-dwelling mob that mimics nearby hostile sounds.</li>
-      <li><strong>Advancements:</strong> A redesigned achievement system that guided players through gameplay goals.</li>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> June 7, 2017</li>
+      <li><strong>Development:</strong> 11 snapshots, 7 pre-releases</li>
     </ul>
-    <p>This update focused heavily on creativity and visual aesthetics, helping builders create more colorful and stylish structures.</p>
+    <p>1.12 is a builder's update on the surface and a technical one underneath. It gave players the first genuinely saturated blocks in the game, and it quietly replaced the achievement system with infrastructure that data packs still run on.</p>
+
+    <h4>Concrete and Glazed Terracotta</h4>
+    <p>Every coloured block before 1.12 was either wool, which is soft and flammable, or stained clay, which is deliberately muted. Neither gave a clean, flat, strong colour.</p>
+    <ul>
+      <li><strong>Concrete powder</strong> is crafted from sand, gravel, and a dye. It obeys gravity like sand.</li>
+      <li>Touch it with still or flowing water and it hardens into <strong>concrete</strong> &mdash; a solid, non-flammable block in the most vivid colours available in vanilla. The two-step recipe is unusual: it is a crafting recipe that finishes in the world rather than in the grid.</li>
+      <li><strong>Glazed terracotta</strong>, made by smelting stained clay, carries an ornate pattern per colour. Rotate the blocks and adjacent copies tile into larger repeating designs, which turned floor and wall patterning into a small puzzle in itself.</li>
+      <li><strong>Coloured beds</strong> filled in the remaining 15 colours alongside the original red, dyeable directly rather than requiring coloured wool.</li>
+    </ul>
+
+    <h4>Parrots, and the Cookie</h4>
+    <p>Parrots were added to jungles in five colours. They perch on your shoulder, imitate the sounds of nearby hostile mobs, and dance near a playing jukebox.</p>
+    <p>In the snapshots, parrots were tamed with cookies. Real parrot owners pointed out the obvious problem &mdash; chocolate is toxic to birds &mdash; and argued the game was teaching children something actively dangerous. Mojang's response was not to remove the interaction. Feeding a parrot a cookie now kills it instantly, applying poison particles and a death, while taming was moved to seeds. It remains one of the few times a real-world safety complaint changed a Minecraft mechanic, and the solution was more pointed than the original.</p>
+
+    <h4>Advancements, Recipes, and Functions</h4>
+    <p>The achievement system was retired. In its place:</p>
+    <ul>
+      <li><strong>Advancements</strong>, a branching tree split into Minecraft, Nether, The End, Adventure, and Husbandry tabs. Unlike achievements they are fully data-driven &mdash; server owners and map makers can define their own with JSON, including custom triggers and rewards.</li>
+      <li><strong>The recipe book</strong>, which unlocks recipes as you acquire ingredients and can auto-fill the crafting grid. Recipes also became data-driven, so custom ones no longer require a mod.</li>
+      <li><strong>Functions</strong>, plain text files containing lists of commands, runnable with <code>/function</code>. This is the direct ancestor of data packs and the point at which command-block spaghetti became optional.</li>
+      <li><strong>Knowledge books</strong>, consumable items that unlock a set of recipes on use.</li>
+      <li><strong>The narrator</strong>, a text-to-speech accessibility option for chat and system messages.</li>
+      <li><strong>Illusioners</strong>, an illager that blinds players and creates decoy copies of itself. They were added and then never given a natural spawn &mdash; still summonable only by command.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>The quiet legacy:</strong> advancements, custom recipes, and functions all shipped in 1.12 as separate features. In 1.13 they were unified into data packs, which is how nearly every modern server and map adds content without touching the game's code.</p>
+    </div>
+
+    <p>Named for its colours, remembered by anyone who has written a function file.</p>
   </section>
 
   <div class="back-button-container">
@@ -34,10 +60,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

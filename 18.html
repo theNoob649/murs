@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>M.U.R.S. - Minecraft 1.18</title>
+  <meta charset="UTF-8">
+  <title>M.U.R.S. - Caves &amp; Cliffs Part II</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,12 +15,46 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.18: Caves & Cliffs Part II</h2>
-    <h3>Release Date: November 30, 2021</h3>
+    <h2>Caves &amp; Cliffs Part II</h2>
+    <h3>Minecraft 1.18</h3>
     <hr>
-    <p>The Caves & Cliffs Part II update revamped Minecraft’s terrain generation, creating massive mountains and sprawling caves that reshaped the world’s exploration and building experience.</p>
-    <p><strong>Tiny addition:</strong></p>
-    <p>Improved world height and depth limits quietly enhanced vertical gameplay, giving players new vertical space to conquer.</p>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> November 30, 2021</li>
+      <li><strong>Development:</strong> 8 snapshots, 8 pre-releases, 4 release candidates</li>
+    </ul>
+    <p>1.18 added no new mobs and almost no new items. It is still arguably the largest update the game has ever shipped, because it replaced the thing every other feature sits on top of &mdash; the terrain generator.</p>
+
+    <h4>Why It Was Split in Half</h4>
+    <p>Caves &amp; Cliffs was announced as a single release and turned out to be too much for one. Mojang split it: 1.17 shipped the content &mdash; axolotls, goats, glow squid, copper, amethyst, deepslate &mdash; in June 2021, and 1.18 shipped the world generation that content was designed to live inside, five months later.</p>
+    <p>That is why 1.17 felt oddly hollow at the time. Copper generated in ordinary caves. Amethyst geodes appeared in terrain that had no idea they existed. 1.18 is the update where all of it finally landed in the right place.</p>
+
+    <h4>The World Got Taller</h4>
+    <p>The build limit went from 256 blocks to 384. The ceiling rose to Y=319 and, more importantly, the floor dropped from Y=0 to <strong>Y=-64</strong>. That extra 64 layers of deepslate roughly doubled the underground.</p>
+    <ul>
+      <li><strong>Ore distribution was rewritten.</strong> Instead of uniform bands, ores generate on triangular distributions with a peak depth. Diamond becomes more common the closer you get to bedrock. Copper spans roughly Y=-16 to Y=112. Iron generates in separate deep and mountain bands.</li>
+      <li><strong>Strip mining at Y=11 stopped being the answer.</strong> The old ritual of digging to lava level and tunneling out was quietly retired by the math.</li>
+      <li><strong>Existing worlds blended.</strong> Rather than a hard chunk wall, 1.18 interpolated between old and new terrain across a transition region &mdash; imperfect, but far better than the 1.7 border scars.</li>
+    </ul>
+
+    <h4>Terrain and Biomes Were Decoupled</h4>
+    <p>This is the change that matters most and gets the least attention. In every version before 1.18, the biome decided the shape of the land. Plains were flat because they were plains. Extreme hills were mountainous because they were extreme hills.</p>
+    <p>1.18 inverted it. The generator builds terrain first using 3D noise for continentalness, erosion, and peaks-and-valleys, then decides which biome belongs on the surface it produced. A forest can sit on a cliff face. A desert can roll over hills. Landscapes stopped looking like tiles snapped together.</p>
+    <p>Mountains got six sub-biomes to describe their vertical range &mdash; Meadow, Grove, Snowy Slopes, Jagged Peaks, Frozen Peaks, and Stony Peaks &mdash; stacking by altitude instead of sitting under one flat label.</p>
+
+    <h4>Noise Caves and Aquifers</h4>
+    <p>Cave generation was replaced too. Instead of carving tunnels along paths, 1.18 uses 3D noise to decide directly which blocks are air, producing three recognizable forms:</p>
+    <ul>
+      <li><strong>Cheese caves:</strong> enormous open chambers, often hundreds of blocks across.</li>
+      <li><strong>Spaghetti caves:</strong> long winding tubes, the closest thing to classic cave tunnels.</li>
+      <li><strong>Noodle caves:</strong> tight, claustrophobic threads that connect the larger systems.</li>
+    </ul>
+    <p><strong>Aquifers</strong> broke the rule that water only exists at sea level. Underground water bodies now generate at their own local levels, so a cave can be flooded far below the ocean surface. Some aquifers generate lava instead, which is a considerably worse thing to dig into blind.</p>
+
+    <div class="callout">
+      <p><strong>The tradeoff:</strong> caves this large are genuinely dangerous to explore and expensive to light. 1.18 made spelunking a real activity again rather than something you did on the way to diamonds &mdash; and it carved out the space that 1.19 dropped the Deep Dark into.</p>
+    </div>
+
+    <p>1.18 is the rare update you cannot summarize with a feature list. You have to walk around in it.</p>
   </section>
 
   <div class="back-button-container">
@@ -28,10 +62,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

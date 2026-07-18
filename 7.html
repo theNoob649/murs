@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>M.U.R.S. - Minecraft 1.7</title>
+  <meta charset="UTF-8">
+  <title>M.U.R.S. - The Update that Changed the World</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,18 +15,47 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.7: The Update That Changed the World</h2>
-    <h3>Release Date: October 25, 2013</h3>
-    <hr />
-    <p>The 1.7 update overhauled Minecraft’s world generation and biomes, giving the game a fresh feel.</p>
-    <ul>
-      <li><strong>New Biomes:</strong> Savanna, Roofed Forest, Extreme Hills, and more brought variety to exploration.</li>
-      <li><strong>New Blocks:</strong> Packed ice, stained glass, new flowers, and hardened clay added color and creativity.</li>
-      <li><strong>Fishing Update:</strong> Players could now catch new fish types, junk, and treasure.</li>
-      <li><strong>World Generation:</strong> Larger biomes and new terrain features improved the landscape.</li>
-      <li><strong>Bug Fixes and Tweaks:</strong> Optimized lighting and performance improvements.</li>
+    <h2>The Update that Changed the World</h2>
+    <h3>Minecraft 1.7.2</h3>
+    <hr>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> October 25, 2013</li>
+      <li><strong>Development:</strong> 14 snapshots, 3 pre-releases</li>
     </ul>
-    <p>This update set the stage for the epic worlds we explore today, changing Minecraft’s look forever.</p>
+    <p>The name is not marketing. 1.7 rewrote the world generator, and the result is the most visible dividing line in Minecraft's history &mdash; you can walk up to it in any world created before it and see exactly where the old terrain stops.</p>
+
+    <h4>The Biome Explosion</h4>
+    <p>Before 1.7 the Overworld had roughly a dozen biomes, and most were subtle variations on forest and plains. 1.7 more than doubled the count and, more importantly, added <em>variants</em> &mdash; hills, plateaus, and rare mutated forms of existing biomes.</p>
+    <ul>
+      <li><strong>Mesa</strong> biomes, built from banded stained clay in reds and oranges, with variants exposing gold at unusually high altitudes.</li>
+      <li><strong>Savanna</strong>, home to acacia trees and their distinctive orange planks.</li>
+      <li><strong>Roofed forest</strong>, a dense dark-oak canopy that stays dark enough for hostile mobs to spawn under it in daylight.</li>
+      <li><strong>Mega taiga</strong>, with 2&times;2 spruce trunks, podzol, and mossy cobblestone boulders.</li>
+      <li><strong>Ice plains spikes</strong>, packed-ice towers standing out of flat snow.</li>
+      <li><strong>Sunflower plains</strong> and <strong>flower forest</strong>, arriving with a wave of new flowers &mdash; sunflowers, peonies, lilacs, rose bushes, and tulips in four colors &mdash; which gave several dyes a renewable source for the first time.</li>
+    </ul>
+    <p>Two new wood types shipped with the biomes: <strong>acacia</strong> and <strong>dark oak</strong>, each with a full set of planks, stairs, slabs, and fences. Dark oak came with an unusual catch &mdash; its saplings only grow when planted in a 2&times;2 square.</p>
+
+    <h4>Why It Broke Old Worlds</h4>
+    <p>Biomes are placed by a layered noise system, and 1.7 replaced that system wholesale. A world that had already generated chunks under the old rules kept them &mdash; but any newly explored chunk used the new generator, and the two do not agree about where terrain should sit.</p>
+    <p>The result is a hard seam: cliffs where a plain should continue, oceans cut off mid-shoreline, rivers ending in a wall. There was no fix, only workarounds &mdash; players abandoned old worlds, explored past the seam and ignored it, or built along it deliberately. Nearly every long-running world from that era carries the scar.</p>
+
+    <h4>Everything Else</h4>
+    <ul>
+      <li><strong>Fish became real items.</strong> Salmon, clownfish, and pufferfish joined raw fish, all catchable, with pufferfish feeding the new Water Breathing potion.</li>
+      <li><strong>Stained glass</strong> in 16 colors, blocks and panes &mdash; a request the community had been making since wool became dyeable.</li>
+      <li><strong>AMPLIFIED</strong> world type, stretching terrain across the full build height into overhangs and vertical extremes.</li>
+      <li><strong>Red sand</strong>, <strong>packed ice</strong>, and <strong>podzol</strong> as new building blocks.</li>
+      <li><strong>Commands:</strong> <code>/summon</code>, <code>/setblock</code>, and <code>/tellraw</code> gave map makers precise control over entities, blocks, and chat for the first time.</li>
+      <li><strong>Networking rewritten</strong> on Netty, logging moved to Log4j 2, and the achievement list was expanded.</li>
+      <li><strong>Multiple resource packs</strong> could be layered at once, with a larger size limit and servers able to send one on join.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>The trade-off:</strong> 1.7 gave the Overworld its variety, but it also established that world generation changes are effectively permanent for existing saves. Every later terrain overhaul &mdash; 1.18 most of all &mdash; inherited the same problem.</p>
+    </div>
+
+    <p>Most updates add things to the world. This one replaced it.</p>
   </section>
 
   <div class="back-button-container">
@@ -34,10 +63,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>

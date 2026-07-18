@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>M.U.R.S. Minecraft 1.3</title>
+  <meta charset="UTF-8">
+  <title>M.U.R.S. - Minecraft 1.3</title>
   <link href="article.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="murs_image_yes.png">
 </head>
@@ -15,19 +15,45 @@
   </header>
 
   <section class="article">
-    <h2>Minecraft 1.3: The Update That Changed the World</h2>
-    <h3>Release Date: July 1, 2012</h3>
-    <hr />
-    <p>This update significantly revamped the game’s core features and world generation.</p>
-    <ul>
-      <li><strong>World Merging:</strong> Allowed single-player worlds to be opened as multiplayer servers, changing how people played together.</li>
-      <li><strong>Desert Temples & Jungle Temples:</strong> New generated structures filled with traps and loot.</li>
-      <li><strong>Trading:</strong> Introduced Villager trading, giving new gameplay depth and economy.</li>
-      <li><strong>New Items:</strong> Emeralds as currency, tripwire hooks, and trading mechanics.</li>
-      <li><strong>Experience & Enchanting:</strong> The enchanting system was improved and expanded.</li>
-      <li><strong>Adventure Mode:</strong> Added for custom maps and better gameplay control.</li>
+    <h2>Minecraft 1.3</h2>
+    <h3>Trading, Temples, and the Singleplayer-Multiplayer Merge</h3>
+    <hr>
+    <ul class="drop-meta">
+      <li><strong>Released:</strong> August 1, 2012</li>
+      <li><strong>Development:</strong> 19 snapshots, 1 pre-release</li>
     </ul>
-    <p>Minecraft 1.3 set the stage for many multiplayer and exploration features that shaped the future of the game.</p>
+    <p>1.3 has no official name, but it held Minecraft's development records until 1.8 came along: the most snapshots for a major release and the longest development cycle, 111 days from the first snapshot to launch. Almost all of that time went into a change players never see directly.</p>
+
+    <h4>One Codebase for Both Modes</h4>
+    <p>Before 1.3, singleplayer and multiplayer were effectively two different games sharing assets. Bugs got fixed in one and not the other, and features behaved differently depending on how you launched them.</p>
+    <p>1.3 collapsed the distinction. Singleplayer worlds now run an <strong>internal server</strong> that your client connects to locally. One code path, one set of behaviors, one set of bugs to fix.</p>
+    <p>The immediately visible payoff was <strong>Open to LAN</strong> &mdash; opening your existing singleplayer world to anyone on the same network from the pause menu, no server setup required. The immediate cost was a rough launch: the merge introduced real stability and performance problems that took several point releases to settle.</p>
+
+    <h4>Villager Trading and the Emerald Economy</h4>
+    <p>Villagers had existed since 1.0 doing essentially nothing. 1.3 gave them jobs.</p>
+    <ul>
+      <li><strong>Emeralds</strong> were added as ore and as currency &mdash; the rarest ore in the game, and deliberately near-useless for anything except trade.</li>
+      <li><strong>Profession-based trades:</strong> farmers, librarians, blacksmiths, priests, and butchers each offered different exchanges, with new tiers unlocking as you traded.</li>
+      <li>This gave surplus crops, paper, and raw materials an exit &mdash; the first real sink for the piles of junk every long-running world accumulates.</li>
+    </ul>
+
+    <h4>Structures, Traps, and Adventure Mode</h4>
+    <ul>
+      <li><strong>Desert pyramids and jungle temples:</strong> the first generated structures built around traps and puzzles rather than just loot. Desert pyramids hide TNT under a pressure plate; jungle temples use tripwires, dispensers, and a lever puzzle.</li>
+      <li><strong>Tripwire hooks and string</strong> became a proper redstone input, and were available to players, not just structures.</li>
+      <li><strong>Adventure mode:</strong> a game mode where you cannot place or break blocks, enabled via command. Custom map makers had been simulating this with hacks for years.</li>
+      <li><strong>Ender chests:</strong> shared personal storage accessible from any ender chest anywhere, including across dimensions.</li>
+      <li><strong>Books and quills</strong> for writing and signing in-game text.</li>
+    </ul>
+
+    <h4>Systems Cleanup</h4>
+    <p>The creative inventory was reorganized into categorized tabs instead of one enormous scrolling grid. Enchanting was rebalanced so level 30 &mdash; the best tier &mdash; needs only 15 bookshelves, standardizing the enchanting room layout that basically every player has built since. Smelting and breeding started granting experience, and stairs and slabs were finally added for every wood type plus sandstone.</p>
+
+    <div class="callout">
+      <p><strong>The tradeoff:</strong> merging singleplayer and multiplayer made 1.3 one of the buggiest launches of its era. It also meant every update afterward only had to be written once. Nearly every feature added since 2012 exists because of that decision.</p>
+    </div>
+
+    <p>The least glamorous major update Minecraft ever shipped, and one of the most important.</p>
   </section>
 
   <div class="back-button-container">
@@ -35,10 +61,8 @@
   </div>
 
   <footer>
-    <p>© 2025 M.U.R.S. All Rights Reserved.</p>
+    <p>&copy; 2026 M.U.R.S. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
