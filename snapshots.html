@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>M.U.R.S. - Snapshots &amp; Previews</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="murs_image_yes.png">
+</head>
+
+<body>
+  <header>
+    <h1>M.U.R.S.</h1>
+    <h2>Minecraft Update Report Site</h2>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="drops.html">Game Drops</a>
+      <a href="snapshots.html">Snapshots</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">Read More</a>
+      <a href="play.html">Play Classic</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <h2>Snapshots &amp; Previews</h2>
+    <p class="section-intro">How to play a <a href="drops.html">game drop</a> months before it comes out &mdash; and what you're signing up for.</p>
+    <hr>
+
+    <div class="about">
+      <h2>The Testing Pipeline</h2>
+      <p>Every drop goes through the same stages before release. On Java the sequence is <strong>snapshots &rarr; pre-releases &rarr; release candidates &rarr; release</strong>. On Bedrock, a parallel <strong>Preview</strong> (or <strong>Beta</strong>) build runs alongside the retail version the whole time.</p>
+      <p>These builds are the main way features get revealed between Minecraft Live shows. When a drop enters snapshots, Mojang starts publishing what's in it week by week.</p>
+      <hr>
+
+      <h2>Java Edition: Snapshots</h2>
+      <p>Snapshots are in-development builds, released roughly weekly, playable through the official launcher.</p>
+      <p><strong>The old naming scheme</strong> (used through 2025) was <code>YYwWWn</code>: two-digit year, the letter <code>w</code>, the ISO week number, then a letter for the order within that week. <code>25w14a</code> was the first snapshot of week 14 of 2025. It told you exactly when a build came out &mdash; but nothing about which update it belonged to.</p>
+      <p><strong>The new scheme</strong> (2026 onward) is <code>YY.D-snapshot-N</code> &mdash; for example <code>26.3-snapshot-1</code>. The target drop is now part of the name. Mojang's own example: the first Mounts of Mayhem snapshot shipped as <code>25w41a</code>, which under the new system would have been <code>25.4-snapshot-1</code>.</p>
+      <p><strong>Pre-releases</strong> come after the snapshot cycle closes. The feature set is frozen; only bugs get fixed. Named like <code>1.14.1 Pre-Release 2</code>.</p>
+      <p><strong>Release candidates</strong> are meant to be the final build unless something game-breaking turns up. Named like <code>1.16-rc1</code>. The record is 1.18, which needed four.</p>
+      <hr>
+
+      <h2>How to Opt In (Java)</h2>
+      <p>Open the Minecraft Launcher &rarr; <strong>Installations</strong> &rarr; <strong>New installation</strong> &rarr; tick <strong>Snapshots</strong> in the version filter &rarr; pick the snapshot you want. It installs alongside your normal version, so you don't lose your release install.</p>
+      <hr>
+
+      <h2>Experiments &amp; Feature Flags (Java)</h2>
+      <p>Java has no in-game experiments menu. Unreleased content is gated behind <strong>feature flags</strong> chosen at world creation: on the world-creation screen, click <strong>Experiments</strong> and enable the relevant built-in datapack.</p>
+      <p>Enabling an experiment marks that world as experimental permanently. You get a warning, and it cannot be cleanly undone.</p>
+      <hr>
+
+      <h2>Bedrock Edition: Preview &amp; Beta</h2>
+      <p><strong>Minecraft Preview</strong> is a separate application that installs alongside your retail copy. Available on Windows, Xbox, PlayStation 4/5, and iOS/iPadOS (via TestFlight, where slots are limited and free up at the start of each month). You need to own Bedrock Edition, or have Game Pass on Windows/Xbox.</p>
+      <p>Preview builds show debug info on screen, have achievements and trophies disabled, and can't connect to retail servers. They carry their own version stream that runs ahead of retail.</p>
+      <p><strong>Bedrock Beta</strong> is the same thing under a different delivery method &mdash; on Android you opt in through the Google Play beta program. Unlike Preview, the Android beta <em>replaces</em> your retail install, so back up your worlds first.</p>
+      <hr>
+
+      <h2>Experimental Toggles (Bedrock)</h2>
+      <p>Create New World &rarr; <strong>Game settings</strong> &rarr; <strong>Experiments</strong> &rarr; enable what you want &rarr; confirm. Existing worlds can do the same from their settings; the game automatically saves a "Copy of &lt;world&gt;" backup first.</p>
+      <p>There are two categories: <strong>Gameplay</strong> toggles for unreleased player-facing features, and <strong>Add-On Creators</strong> toggles for scripting and API surfaces.</p>
+      <hr>
+
+      <h2>Before You Do Any of This</h2>
+      <p><strong>Back up your worlds.</strong> This is not boilerplate. Snapshot and preview builds can corrupt saves, and a world opened in a newer build usually cannot be opened in an older one again.</p>
+      <p><strong>Turning on experiments is permanent.</strong> On Bedrock it disables achievements for that world forever. On both editions the world is flagged and cannot be reverted.</p>
+      <p><strong>Features get cut.</strong> Anything in a snapshot can be changed or removed before release &mdash; fireflies were announced for The Wild Update and never shipped. Don't build a base around something that isn't out yet.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 M.U.R.S. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

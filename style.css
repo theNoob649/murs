@@ -283,6 +283,74 @@ p {
 
 /* Contact form styling to match M.U.R.S. theme */
 
+/* ---- Game drop timeline (drops.html) ---- */
+
+.drop-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border-left: 3px solid #50f763;
+}
+
+.drop-card {
+  position: relative;
+  display: block;
+  margin: 0 0 18px 22px;
+  padding: 14px 18px;
+  background-color: #252525;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.drop-card::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #50f763;
+}
+
+.drop-card:hover {
+  border-color: #4fc3f7;
+  transform: translateX(4px);
+}
+
+.drop-card h4 {
+  margin: 0 0 6px;
+  color: #ffa726;
+  font-size: 1.15em;
+}
+
+.drop-card .drop-when {
+  color: #888888;
+  font-size: 0.85em;
+}
+
+.drop-card p {
+  margin: 8px 0 0;
+  color: #bbbbbb;
+  font-size: 0.95em;
+}
+
+.drop-card.upcoming::before {
+  background-color: #ffa726;
+}
+
+.drop-card.upcoming h4 {
+  color: #4fc3f7;
+}
+
+.section-intro {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  text-align: left;
+}
+
 .contact-form {
   max-width: 600px;
   margin: 2rem auto 4rem;

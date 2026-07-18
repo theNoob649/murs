@@ -43,6 +43,23 @@ section.article h2 {
   color: #ffa726;
 }
 
+section.article a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+section.article a:hover {
+  text-decoration: underline;
+}
+
+section.article code {
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+  color: #50f763;
+}
+
 section.article h3 {
   color: #aaaaaa;
   font-weight: 400;
@@ -62,6 +79,84 @@ ul li {
   margin-bottom: 10px;
 }
 
+
+/* ---- Game drop article extras ---- */
+
+.drop-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.drop-meta li {
+  background-color: #1b1b1b;
+  border: 1px solid #4fc3f7;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.85em;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.drop-meta li strong {
+  color: #4fc3f7;
+}
+
+.drop-meta li.unreleased {
+  border-color: #ffa726;
+}
+
+.drop-meta li.unreleased strong {
+  color: #ffa726;
+}
+
+.callout {
+  background-color: #1f1f1f;
+  border-left: 4px solid #50f763;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 20px 0;
+}
+
+.callout.warning {
+  border-left-color: #ffa726;
+}
+
+.callout p {
+  margin: 0;
+}
+
+.callout p + p {
+  margin-top: 10px;
+}
+
+.drop-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px auto 0;
+  max-width: 800px;
+}
+
+.drop-nav a {
+  background-color: #252525;
+  border: 1px solid #4fc3f7;
+  color: #4fc3f7;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.drop-nav a:hover {
+  background-color: #4fc3f7;
+  color: #1b1b1b;
+}
 
 .back-button-container {
   text-align: center;
