@@ -30,6 +30,36 @@ header h2 {
   margin: 10px 0 0;
 }
 
+/* Site navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 18px;
+}
+
+.nav a {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  color: #50f763;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: #50f763;
+  color: #1b1b1b;
+}
+
+.nav a.active {
+  background-color: #2f2f2f;
+  color: #4fc3f7;
+}
+
 section.article {
   background-color: #252525;
   max-width: 800px;
