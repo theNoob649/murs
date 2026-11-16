@@ -3,12 +3,82 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>M.U.R.S.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M.U.R.S. - Play Classic</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="murs_image_yes.png">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="murs_image_yes.png">
+  <style>
+    .classic-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border: 2px solid #50f763;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 18px 0 10px;
+    }
+    .classic-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .classic-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+    }
+    .classic-actions a,
+    .classic-actions button {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      background: #292929;
+      color: #50f763;
+      border: 1px solid #3a3a3a;
+      border-radius: 6px;
+      padding: 8px 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .classic-actions a:hover,
+    .classic-actions button:hover {
+      background: #50f763;
+      color: #1b1b1b;
+    }
+    .controls-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 18px;
+      font-size: 0.92rem;
+    }
+    .controls-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #333;
+      color: #bbbbbb;
+    }
+    .controls-table td:first-child {
+      width: 38%;
+      color: #f0f0f0;
+      font-weight: 600;
+    }
+    kbd {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      background: #2c2c2c;
+      border: 1px solid #444;
+      border-bottom-width: 3px;
+      border-radius: 4px;
+      padding: 1px 7px;
+      color: #f0f0f0;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,6 +87,7 @@
     <h2>Minecraft Update Report Site</h2>
     <div class="nav">
       <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
       <a href="drops.html">Game Drops</a>
       <a href="news.html">News</a>
       <a href="snapshots.html">Snapshots</a>
@@ -28,14 +99,56 @@
 
   <main class="content">
     <h2>Play Classic</h2>
-    <div class="game-links">
-      <a href="https://classic.minecraft.net/">Classic</a>
+    <p class="section-intro">Minecraft as it was in the summer of 2009 &mdash; free, in your browser, no account needed. Click inside the game to start.</p>
+
+    <div class="classic-frame">
+      <iframe id="classic" src="https://classic.minecraft.net/" title="Minecraft Classic" allow="fullscreen; pointer-lock" allowfullscreen></iframe>
+    </div>
+    <div class="classic-actions">
+      <button type="button" id="fullscreen">Full screen</button>
+      <a href="https://classic.minecraft.net/" target="_blank" rel="noopener">Open in a new tab</a>
+      <a href="classic.html">Read about Classic</a>
+    </div>
+
+    <div class="about">
+      <h2>What Is This?</h2>
+      <p>To celebrate Minecraft's 10th anniversary in May 2019, Mojang put the original <a href="classic.html">Classic</a> build back online. It's version <strong>0.0.23a_01</strong>, the last build of Classic's multiplayer test from July 2009, and it runs exactly like it did back then &mdash; including the bugs.</p>
+      <p>There's no survival, no crafting, and no day-night cycle. It's pure creative mode: a small island surrounded by a bedrock sea, and <strong>32 blocks</strong> to build with, most of them colored wool (which was still called &ldquo;cloth&rdquo;).</p>
+      <hr>
+
+      <h2>Controls</h2>
+      <table class="controls-table">
+        <tr><td><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></td><td>Move</td></tr>
+        <tr><td><kbd>Space</kbd></td><td>Jump</td></tr>
+        <tr><td>Left click</td><td>Break a block</td></tr>
+        <tr><td>Right click</td><td>Place a block</td></tr>
+        <tr><td><kbd>B</kbd></td><td>Open the block menu</td></tr>
+        <tr><td><kbd>1</kbd> &ndash; <kbd>9</kbd></td><td>Pick a hotbar slot</td></tr>
+        <tr><td><kbd>G</kbd></td><td>Spawn a &ldquo;human&rdquo; mob &mdash; the only mob in the game</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>Release the mouse and open the menu</td></tr>
+      </table>
+      <hr>
+
+      <h2>Play With Friends</h2>
+      <p>Classic has multiplayer built in. When you start a world, you're the host, and you can invite up to <strong>9 friends</strong> by sending them your world's link. To get it, use <strong>Open in a new tab</strong> above, then copy the address from that tab.</p>
+      <hr>
+
+      <h2>Doesn't Work?</h2>
+      <p>Classic needs a keyboard and mouse, so it won't really work on phones or tablets. If the game won't take your mouse, click inside it once, or use <strong>Open in a new tab</strong>.</p>
     </div>
   </main>
 
   <footer>
     <p>&copy; 2026 M.U.R.S. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById('fullscreen').addEventListener('click', function () {
+      var frame = document.querySelector('.classic-frame');
+      if (frame.requestFullscreen) frame.requestFullscreen();
+      else if (frame.webkitRequestFullscreen) frame.webkitRequestFullscreen();
+    });
+  </script>
 </body>
 
 </html>

@@ -245,3 +245,30 @@ section.article p {
 section.article ul li {
   line-height: 1.6;
 }
+
+/* ---- Article hero image ---- */
+.article-hero {
+  margin: 22px 0 26px;
+}
+
+.article-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  background-color: #242424;
+}
+
+.article-hero figcaption {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: #7a7a7a;
+  text-align: right;
+}
+
+section.article .article-hero figcaption a {
+  color: #8a8a8a;
+}
